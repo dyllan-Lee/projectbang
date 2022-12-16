@@ -1,0 +1,142 @@
+  <!--section 1 시작-->
+  <section>
+    <div class="pdinfo_wrap">
+      <h1>PRODUCT</h1>
+    </div>
+    <div class="pdinfo_nav">
+      <ul>
+        <li><a href="/pdinfo">제품 전체보기</a></li>
+        <li><a href="#">DRIVER</a></li>
+        <li><a href="#">WOOD</a></li>
+        <li><a href="#">HYBRID IRON</a></li>
+        <li><a href="#">WEDGE</a></li>
+        <li><a href="#">GOLFBAG</a></li>
+        <li><a href="#">CAP/ETC.</a></li>
+      </ul>
+    </div>
+  </section>
+  <!--section 2 시작-->
+  <section class="w1280">
+    <div class="pdinfo_title">
+      <h1>뱅골프의 제품들을 만나보세요</h1>
+    </div>
+
+    <div class="pdinfo_pd">
+      <ul>
+        <% rows.forEach((row, index)=>{ %>
+        <li>
+          <a href="/pdinfoM?id=<%= row.id %>">
+            <div class="pdinfo_img"><span><img src="<%= row.img %>" alt=""></span>
+              <p><strong class="pdinfo_strong"><%= row.title %></strong><br><%= row.info %><br>
+                <b class="pdinfo_b"><%= row.infodetail %></b></p>
+            </div>
+          </a>
+        </li>
+        <% }); %>
+        <!-- <li>
+          <a href="#">
+            <div class="pdinfo_img"><span><img src="img/product/wood-blue.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LIGHT PLUS(Blue)</strong><br>뱅드라이버 (초경량+극초고반발)남성용드라이버<br>
+                <b class="pdinfo_b">반발계수 최대 0.930이하/Total Weight 최저 230g</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pdinfo_img"><span><img src="img/product/wood-pink.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LIGHT PLUS(Pink)</strong><br>뱅드라이버 (초경량+극초고반발)여성용드라이버<br>
+                <b class="pdinfo_b">반발계수 최대 0.930이하/Total Weight 최저 230g</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pdinfo_img"><span><img src="img/product/wood-yellow.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LONGDISTANCE</strong><br>초고반발 뱅우드 남성용/여성용<br>
+                <b class="pdinfo_b">반발계수 최대 0.925이하</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pdinfo_img"><span><img src="img/product/wood-red.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LIGHT PREMIUM(Red)</strong><br>뱅드라이버 (초경량+극초고반발)여성용드라이버<br>
+                <b class="pdinfo_b">반발계수 최대 0.945이하/Total Weight 최저 225g</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pdinfo_img"><span><img src="img/product/wood-wine.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LIGHT PREMIUM(Wine)</strong><br>뱅드라이버 (초경량+극초고반발)남성용드라이버<br>
+                <b class="pdinfo_b">반발계수 최대 0.945이하/Total Weight 최저 225g</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="pdinfo_img"><span><img src="img/product/iron-blue.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LIGHT PLUS(Blue)</strong><br>하이브리드아이언 (초경량+극초고반발)남성용<br>
+                <b class="pdinfo_b">반발계수 최대 0.930이하/Total Weight 최저 273g</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="pdinfo_img"><span><img src="img/product/iron-yellow.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]LONGDISTANCE</strong><br>초고반발 하이브리드아이언 남성용/여성용<br>
+                <b class="pdinfo_b">반발계수 최대 0.925이하</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="pdinfo_img"><span><img src="img/product/bag-gothic.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]CLASS LIMITED GOLF BAG</strong><br>
+                <b class="pdinfo_b">골퍼들의 요구를 적극 반영한 중후한 멋과 고품격의 디자인</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="pdinfo_img"><span><img src="img/product/bag-yellow.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]BANG QUILTING LINE(YELLOW) GOLF BAG</strong><br>
+                <b class="pdinfo_b">뱅골프 클럽의 컬러를 적용한 100% 수작업의 명품 골프백</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="pdinfo_img"><span><img src="img/product/pou-yellow.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]BANG QUILTING LINE(YELLOW) BOSTON BAG</strong><br>
+                <b class="pdinfo_b">뱅골프 클럽의 컬러를 적용한 100% 수작업의 명품 골프백</b></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="pdinfo_img"><span><img src="img/product/golfcap.jpg" alt=""></span>
+              <p><strong class="pdinfo_strong">[뱅골프]GOLF CAP</strong><br>
+                <b class="pdinfo_b"></b></p>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+    <div class="pdinfo_num">
+      <ul>
+        <li><a href="">
+            <p>1</p>
+          </a></li>
+        <li><a href="">
+            <p>2</p>
+          </a></li>
+        <li><a href="">
+            <p>3</p>
+          </a></li>
+      </ul>
+    </div>
+    <div class="pdinfo-wrtie" onclick="javascript:location.href='/pdinfowrite'" style="cursor: pointer;">
+      작성하기
+    </div>
+  </section>

@@ -1,0 +1,101 @@
+.notice_h_bg {
+  width: 100%;
+  height: 440px;
+  background-image: url(../img/bangnotice_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.notice_h_bg>h1 {
+  color: #fff;
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 440px;
+}
+
+.notice_title>h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table,
+th,
+tr,
+td {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+th {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+th.ntcTitle {
+  width: 80%;
+}
+
+th {
+  height: 50px;
+}
+
+td {
+  height: auto;
+  line-height: 300%;
+}
+
+td.ntctit {
+  text-align: left;
+  padding-left: 30px;
+}
+
+td.ntctit a {
+  color: #fff;
+}
+
+.ntcbtn {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.ntcwrite_w {
+  width: 100px;
+  text-align: center;
+}
+
+#ntcwrite_sub {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 30%;
+}
+
+textarea {
+  /* border: none; */
+  resize: none;
+  height: 100%;
+}
+
+.ntcwrite_w {
+  position: relative;
+}
+
+.ntcwrite_w>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ntcwrite_txt {
+  font-size: 0;
+}

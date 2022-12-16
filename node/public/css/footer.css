@@ -1,0 +1,156 @@
+#bgColor_foot {
+  background-color: #2c2c2c;
+  margin-top: 100px;
+  border-top: 1px solid #d9d9d9;
+}
+
+/*footer top*/
+.f_top {
+  padding: 40px 0;
+}
+
+.f_top ul {
+  display: flex;
+}
+
+.f_top b {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.f_top p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.f_top p::before {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: #5c5c5c;
+  content: "";
+  margin: 0 18px 2px;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* footer mid */
+.f_mid {
+  border-top: 1px solid rgba(217, 217, 217, 0.3);
+  border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.f_mid_left {
+  width: 960px;
+  margin-right: 80px;
+}
+
+.f_mid_left>ul {
+  display: flex;
+}
+
+.f_mid_left>ul>li {
+  width: calc((98% -10px)/6);
+}
+
+.f_mid_left a {
+  color: #ffffffB3;
+  font-size: 13px;
+}
+
+.f_mid_left a:hover {
+  text-decoration: underline;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.f_mid_right {
+  width: 240px;
+  margin-top: 30px;
+}
+
+.call {
+  font-size: 40px;
+  color: #ffcc00;
+  font-weight: 900;
+}
+
+.csday {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.bank {
+  margin-top: 5px;
+}
+
+.bank p {
+  font-size: 14px;
+
+}
+
+.bank strong {
+  color: #ffffffB3;
+}
+
+/*footer bottom*/
+
+
+.f_bot {
+  padding-top: 30px;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.f_bot_left {
+  padding-left: 140px;
+  background: url(../img/logo-foot.png) no-repeat 0 center;
+  width: 1040px;
+  box-sizing: border-box;
+}
+
+.listline {
+  display: flex;
+  color: #ffffffB3;
+  margin-top: 3px;
+}
+
+.listline a {
+  color: #ffffffB3;
+  font-size: 11px;
+  margin: 0 0 0 3px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  line-height: 1em;
+  padding: 2px 3px 3px;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.libe::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: #5c5c5c;
+  margin: 0 8px 2px;
+  vertical-align: middle;
+}
+
+.f_bot_right {
+  width: 240px;
+}
+
+.f_bot_right p {
+  font-size: 12px;
+  color: #ffffffB3;
+}

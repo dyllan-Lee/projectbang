@@ -1,0 +1,31 @@
+<section>
+  <div class="pdinfo_wrap">
+    <h1>PRODUCT</h1>
+  </div>
+</section>
+<h1 style="text-align: center; margin: 50px 0; font-size: 32px; font-weight: bold;">상품 정보 추가</h1>
+
+<form action="/pdQS" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="id" value="<%= row.id %>">
+  <div>
+    <input type="file" name="img" value="<%=row.img%>">
+  </div>
+  <div>
+    <label for="">상품명이름</label>
+    <input type="text" name="title" value="<%=row.title%>">
+  </div>
+  <div>
+    <label for="">상품정보</label>
+    <input type="text" name="info" value="<%=row.info%>">
+  </div>
+  <div>
+    <label for="">상품상세정보</label>
+    <input type="text" name="infodetail" value="<%=row.infodetail%>">
+  </div>
+  <div class="price">
+    <label for="">가격</label>
+    <input type="text" name="price" value="<%=row.price%>">
+  </div>
+  <input type="submit" value="저장">
+
+</form>

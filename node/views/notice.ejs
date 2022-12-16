@@ -1,0 +1,35 @@
+  <!--section1-->
+  <section class="w1280">
+    <div class="notice_h_bg">
+      <h1>COMMUNITY</h1>
+    </div>
+  </section>
+  <!--section2-->
+  <section class="w1280">
+    <div class="notice_title">
+      <h1>공지사항</h1>
+    </div>
+    <!-- <colgroup>
+      <col style="width: 10%;">
+    </colgroup> -->
+    <table border="1" align="center" width="1280px" height="350px">
+      <th>글번호</th>
+      <th class="ntcTitle">제목</th>
+      <th>작성일자</th>
+      <tr>
+        <td>0</td>
+        <td class="ntctit"><a href="/noticeinfo">뱅골프클럽 정품vs가품(모조품)</a></td>
+        <td>2021.04.26</td>
+      </tr>
+      <% rows.forEach((row, index)=>{ %>
+      <tr>
+        <td><%= row.id %></td>
+        <td class="ntctit"><a href="/noticeinfoM?id=<%= row.id %>"><%= row.title %></a> </td>
+        <td><%= row.DATE %></td>
+      </tr>
+      <% }); %>
+    </table>
+    <div class="ntcbutton">
+      <button type="button" class="ntcbtn" onclick="location.href='/ntcwrite'" style="float: right;">작성하기</button>
+    </div>
+  </section>

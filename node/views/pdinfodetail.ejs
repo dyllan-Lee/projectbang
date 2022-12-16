@@ -1,0 +1,68 @@
+  <!--section 1 시작-->
+  <section>
+    <div class="pdinfo_wrap">
+      <h1>PRODUCT</h1>
+    </div>
+    <div class="pdinfo_nav">
+      <ul>
+        <li><a href="/pdinfo">제품 전체보기</a></li>
+        <li><a href="#">DRIVER</a></li>
+        <li><a href="#">WOOD</a></li>
+        <li><a href="#">HYBRID IRON</a></li>
+        <li><a href="#">WEDGE</a></li>
+        <li><a href="#">GOLFBAG</a></li>
+        <li><a href="#">CAP/ETC.</a></li>
+      </ul>
+    </div>
+  </section>
+  <!--section 2 시작-->
+  <!-- <section class="w1280">
+    <div class="pdinfodetail-wrap">
+      <div class="pdinfodetail-img"><img src="img/product/bag-gothic.jpg" alt="고딕가방"></div>
+      <div class="pdinfodetail-txt-wrap">
+        <div class="pdinfodetail-title">
+          <h2>[뱅골프]CLASS LIMITED GOLF BAG</h2>
+        </div>
+        <div class="pdinfodetail-info">
+          <p>골퍼들의 요구를 적극 반영한 중후한 멋과 고품격의 디자인</p>
+        </div>
+        <div class="pdinfodetail-infodetail">
+          <p></p>
+        </div>
+        <div class="pdinfodetail-price">
+          <p>1,510,000원</p>
+        </div>
+        <div class="pdinfo-buy">
+          구매하기
+        </div>
+      </div>
+    </div>
+    <div class="pdinfo-back">돌아가기</div>
+  </section> -->
+  <section class="w1280">
+    <div class="pdinfodetail-wrap">
+      <div class="pdinfodetail-img"><img src="<%= row.img%>" alt="이미지"></div>
+      <div class="pdinfodetail-txt-wrap">
+        <div class="pdinfodetail-title">
+          <h2><%= row.title%></h2>
+        </div>
+        <div class="pdinfodetail-info">
+          <p><%= row.info%></p>
+        </div>
+        <div class="pdinfodetail-infodetail">
+          <p><%= row.infodetail%></p>
+        </div>
+        <div class="pdinfodetail-price">
+          <p><%= row.price%>원</p>
+        </div>
+        <div class="pdinfo-buy">
+          구매하기
+        </div>
+      </div>
+    </div>
+    <div class="pdinfo-back" onclick="javascript:location.href='/pdinfo'" style="cursor: pointer;">돌아가기</div>
+    <div class="pdinfo-back" onclick="javascript:location.href='/pdDelete?id=<%= row.id %>'" style="cursor: pointer;">
+      삭제하기</div>
+    <div class="pdinfo-back" onclick="javascript:location.href='/pdinfore?id=<%= row.id %>'" style="cursor: pointer;">
+      수정하기</div>
+  </section>

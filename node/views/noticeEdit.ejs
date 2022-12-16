@@ -1,0 +1,28 @@
+    <!--section1-->
+    <section>
+      <div class="notice_h_bg">
+        <h1>COMMUNITY</h1>
+      </div>
+    </section>
+
+    <!--section2-->
+    <section class="w1280">
+      <h1>수정 페이지</h1>
+      <form action="/writememoS" method="post">
+        <input type="hidden" name="id" value="<%= row.id %>">
+        <table border="1" class="ntcwrite_wrap">
+          <tr>
+            <td class="ntcwrite_w">제목</td>
+            <td><input type="text" name="title" value="<%=row.title%>"></td>
+          </tr>
+          <tr>
+            <td class="ntcwrite_w">
+              <div>내용</div>
+            </td>
+            <td class="ntcwrite_txt"><textarea name="cont" rows="30" cols="40" wrap="physical"><%=row.cont%></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="수정하기" id="ntcwrite_sub" style="float: right;">
+      </form>
+    </section>

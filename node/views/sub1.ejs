@@ -1,0 +1,20 @@
+  <!--section1-->
+  <section>
+    <div class="notice_h_bg">
+      <h1>COMMUNITY</h1>
+    </div>
+  </section>
+  <!--section2-->
+  <section class="w1280">
+    <div class="notice_title">
+      <h1>공지사항</h1>
+    </div>
+    <div class="ntcTictle_wrap">
+      <h1><b>공지</b><%= memo.title %></h1>
+      <p><strong>작성자 : </strong>관리자</p>
+    </div>
+    <div class="ntcinfo_wrap">
+      <p><%= memo.content %></p>
+    </div>
+    <button type="button" onclick="location.href='/ntcwrite'" class="ntcinfo_btn" style="float: right;">수정</button>
+    <button type="button" onclick="location.href='/notice'" class="ntcinfo_btn" style="float: right;">목록</button>

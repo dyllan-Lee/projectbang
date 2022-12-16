@@ -1,0 +1,35 @@
+.bg_color {
+  background-color: #000;
+  color: #fff;
+}
+
+.w1280 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.m100 {
+  margin-top: 100px;
+}
+
+.p20 {
+  padding-top: 20px;
+}
+
+.w100 {
+  width: 100%;
+  min-width: 1280px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+b {
+  color: #ffcc00;
+}
+
+.price {
+  margin-bottom: 20px;
+}
