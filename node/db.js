@@ -3,11 +3,12 @@ const {
   connect
 } = require('./app');
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '1234',
-  database: 'banggolf',
-  dateStrings: 'date'
+  host: 'us-cdbr-east-06.cleardb.net',
+  user: 'bec5bccc9f663a',
+  password: 'bb7f8f0a',
+  database: 'heroku_9b3e89282139ce5',
+  dateStrings: 'date',
+  multipleStatements: true
 });
 /* 데이터 베이스 연결 */
 function getMemo(callback) {
