@@ -3,10 +3,10 @@ const {
   connect
 } = require('./app');
 var connection = mysql.createConnection({
-  host: 'us-cdbr-east-06.cleardb.net',
-  user: 'bec5bccc9f663a',
-  password: 'bb7f8f0a',
-  database: 'heroku_9b3e89282139ce5',
+  host: 'database-1.cg3f0s7dp00p.us-east-1.rds.amazonaws.com',
+  user: 'root',
+  password: '10a49460',
+  database: 'banggolf',
   dateStrings: 'date',
   multipleStatements: true
 });
