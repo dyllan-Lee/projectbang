@@ -66,6 +66,8 @@ function deleteById(id, callback) {
   })
 }
 
+
+
 /* 상품 정보 추가 */
 function insertPd(img, title, info, infodetail, price, callback) {
   connection.query(`insert into product(create_time, img, title, info, infodetail, price)
